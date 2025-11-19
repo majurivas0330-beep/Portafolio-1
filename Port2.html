@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Juan José Roldán Rivas</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Juan José Roldán Rivas</h1>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- MENÚ -->
+        <nav id="menu">
+            <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#temas-interes">Temas de interés</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const btn = document.getElementById("hamburguesa");
+        const menu = document.getElementById("menu");
+         btn.addEventListener("click", () => {
+            menu.classList.toggle("visible");});
+    </script>
+
+    <main>
+        <!-- SOBRE MÍ -->
+        <section id="SobreMi">
+            <div class="sobre-mi-contenedor">
+                <div class="texto-sobre-mi">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy Juan José, un apasionado por el desarrollo web y la tecnología. Me encanta crear soluciones innovadoras
+                        y aprender nuevas habilidades. Tengo estudios en Diseño Gráfico y un diplomado en Marketing de Atracción.
+                        Soy una persona proactiva, disciplinada y con mentalidad de crecimiento. 
+                        Amo el deporte, especialmente el fútbol, y creo firmemente en el equilibrio entre la vida laboral y personal.
+                        Me gusta ser constante y eficaz a la hora de realizar mis actividades, ya sean personales o laborales.</p>
+                </div>
+                <div class="imagen-sobre-mi">
+                    <img src="imagen/Yo.jpeg" alt="Foto de Juan José">
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="Proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-container">
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>1. Generar ingresos y crear mis propios negocios</h3>
+                    <p>Mi meta es comenzar a generar ingresos, construir mis propios negocios y ofrecer empleo a otros, buscando independencia económica y crecimiento familiar.</p>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>2. Contribuir al desarrollo del país</h3>
+                    <p>Deseo contribuir al desarrollo de mi país, aplicando mis conocimientos en diseño, marketing y desarrollo para proyectos que impacten positivamente a la sociedad.</p>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>3. Enfocarme en mi vida deportiva</h3>
+                    <p>Me apasiona el fútbol. Aspiro a crecer como jugador o entrenador, disfrutando el proceso de mejora y aprendizaje constante.</p>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>4. Viajar y conocer nuevas culturas</h3>
+                    <p>Quiero recorrer el mundo, conocer culturas diversas y aprender de cada experiencia para enriquecer mi visión personal y profesional.</p>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>5. Desarrollo personal y profesional continuo</h3>
+                    <p>Estoy comprometido con mi crecimiento constante, adquiriendo nuevas habilidades y conocimientos para adaptarme a los cambios y desafíos del mundo actual.</p>
+                </article>
+
+                <article class="proyecto">
+                    <div class="proyecto-icono">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>6. Inspirar y ayudar a otros</h3>
+                    <p>Quiero ser una fuente de inspiración para la comunidad, compartiendo mis experiencias y conocimientos para motivar a otros a alcanzar sus metas.</p>
+                </article>
+            </div>
+
+            <p class="mensaje-final">
+                Mi mayor proyecto es ser un orgullo y fuente de inspiración para mi familia, demostrando que con esfuerzo y dedicación se pueden alcanzar los sueños.
+            </p>
+        </section>
+
+        <!-- TEMAS DE INTERÉS -->
+        <section id="temas-interes">
+            <h2>Temas de Interés</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Tecnología</h3>
+                    <p>Aprender a manejar y realizar el tema de arquitectura de software de una manera profesional y efectiva.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Deporte</h3>
+                    <p>Adquirir más conocimientos sobre todo el tema del deporte, el cuidado (físico y mental) de los deportistas y claramente el mío también.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <article class="Numero">
+                <p>Número: 304 4057338</p>
+            </article>
+
+            <form action="https://formspree.io/f/mnnlnkzr" method="POST">
+                <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email" placeholder="Tu correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                    <textarea name="message" id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Gracias por visitar mi portafolio</h3>
+        <p>© 2025 Juan José Roldán Rivas</p>
+    </footer>
+</body>
+</html>
