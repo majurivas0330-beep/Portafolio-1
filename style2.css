@@ -155,7 +155,14 @@ h2 {
   color: var(--color-secondary);
   margin-bottom: 12px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
+
+.proyecto-icono:hover{
+  transform: translateY(-4px);
+  color: #380079
+}
+
 
 .proyecto h3 {
   margin: 0 0 8px;
