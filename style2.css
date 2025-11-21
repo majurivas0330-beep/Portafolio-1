@@ -1,6 +1,7 @@
 :root{
   --color-primary:#fff;
   --color-secondary:#4c6fff;
+  --letra:'Poppins', sans-serif;
 }
 
 /* === RESET GLOBAL === */
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--letra);
   background-color: #1a1a1a;
   color:var(--color-primary);
   line-height: 1.6;
