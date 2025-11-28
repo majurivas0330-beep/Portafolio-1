@@ -311,7 +311,7 @@ footer {
   border-top: 4px solid #080080;
 }
 
-/* === RESPONSIVE === */
+/* RESPONSIVE / MOVIL */
 @media (max-width: 490px) {
 
   /* mostrar hamburguesa */
@@ -368,61 +368,85 @@ footer {
   }
 }
 
+/*RESPONSIVE / TABLET*/
 @media (max-width: 768px) and (min-width: 491px) {
 
-  /* Ajuste del header */
+  /* Header reorganizado */
   header {
     padding: 20px 30px;
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 
+  /* Ocultar el menú horizontal clásico */
   nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
+    display: none;
   }
 
-  header h1 {
-    font-size: 1.5em;
+  /* Mostrar hamburguesa */
+  .hamburguesa {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;    /* empuja la hamburguesa a la derecha */
   }
 
-  /* Ajuste del main */
+  .hamburguesa span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+  }
+
+  /* Menú desplegable */
+  nav.visible ul {
+    display: flex;
+    flex-direction: column;
+    background: #000000e6;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    gap: 15px;
+    box-shadow: 0 4px 10px #00000090;
+  }
+
+  nav.visible ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Ajustes generales de tablet */
   main {
     padding: 25px;
     margin: 25px;
   }
 
-  /* Sobre mí */
   .sobre-mi-contenedor {
     flex-direction: row;
     text-align: left;
     gap: 20px;
   }
 
-  .texto-sobre-mi {
-    flex: 1 1 55%;
-  }
-
   .imagen-sobre-mi img {
     max-width: 160px;
   }
 
-  /* Proyectos */
   .proyecto {
     flex: 1 1 calc(50% - 15px);
   }
 
-  /* Temas de interés */
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  /* Formulario */
   button {
     align-self: flex-start;
   }
-}
+
