@@ -157,7 +157,6 @@ h2 {
 
 
 .proyecto:hover {
-  background: #3b3b3f;
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -165,10 +164,8 @@ h2 {
 /* efecto del icono cuando el usuario hace hover al contenedor */
 .proyecto:hover .proyecto-icono {
   transform: translateY(-4px);
-  color: #380079;
+  color: #03d9ff;
 }
-
-
 
 .proyecto h3 {
   margin: 0 0 8px;
