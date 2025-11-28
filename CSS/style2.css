@@ -368,21 +368,61 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  main {
-    padding: 18px;
-  }
+@media (max-width: 768px) and (min-width: 491px) {
 
-  nav ul {
-    flex-direction: linear;
+  /* Ajuste del header */
+  header {
+    padding: 20px 30px;
+    flex-direction: column;
+    text-align: center;
     gap: 12px;
   }
 
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
   header h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
+  }
+
+  /* Ajuste del main */
+  main {
+    padding: 25px;
+    margin: 25px;
+  }
+
+  /* Sobre mí */
+  .sobre-mi-contenedor {
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .texto-sobre-mi {
+    flex: 1 1 55%;
   }
 
   .imagen-sobre-mi img {
-    max-width: 130px;
+    max-width: 160px;
+  }
+
+  /* Proyectos */
+  .proyecto {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  /* Temas de interés */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Formulario */
+  button {
+    align-self: flex-start;
   }
 }
