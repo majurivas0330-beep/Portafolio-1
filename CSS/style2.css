@@ -145,6 +145,16 @@ h2 {
   cursor: pointer;
   }
 
+.proyecto-icono {
+  font-size: 2em;
+  color: var(--color-secondary);
+  margin-bottom: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
 
 .proyecto:hover {
   background: #3b3b3f;
@@ -152,18 +162,12 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.proyecto-icono {
-  font-size: 2em;
-  color: var(--color-secondary);
-  margin-bottom: 12px;
-  text-align: center;
-  transition: transform 0.3s ease;
+/* efecto del icono cuando el usuario hace hover al contenedor */
+.proyecto:hover .proyecto-icono {
+  transform: translateY(-4px);
+  color: #380079;
 }
 
-.proyecto-icono:hover{
-  transform: translateY(-4px);
-  color: #380079
-}
 
 
 .proyecto h3 {
