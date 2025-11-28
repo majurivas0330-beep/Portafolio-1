@@ -312,7 +312,7 @@ footer {
 }
 
 /* RESPONSIVE / MOVIL */
-@media (max-width: 490px) {
+@media (max-width: 490px) and (min-width: 400px) {
 
   /* mostrar hamburguesa */
   .hamburguesa {
